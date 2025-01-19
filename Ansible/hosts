@@ -1,0 +1,13 @@
+[jenkins-master]
+<private-ip of ec2 instance>
+
+[jenkins-master:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/amirlinux.pem
+
+[jenkins-slave]
+<private ip of build server>
+
+[jenkins-slave:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/amirlinux.pem
